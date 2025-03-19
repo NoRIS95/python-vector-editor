@@ -25,6 +25,8 @@ class VectorEditor:
         self.shapes.append(square)
 
     def delete_shape(self, index):
+        if len(self.shapes) == 0:
+            return "Список пустой. Нечего удалять.\n"
         if 0 <= index < len(self.shapes):
             self.shapes.pop(index)
             return "Фигура успешно удалена\n"

@@ -35,7 +35,7 @@ class VectorEditor:
 
     def list_shapes(self):
         if len(self.shapes) == 0:
-            print("Список фигур пуст")
+            print("Список фигур пуст\n")
         for i, shape in enumerate(self.shapes):
             print(f'{i}: {shape}')
         print("")
